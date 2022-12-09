@@ -1,9 +1,9 @@
 void display() {
+ //Concatenation
   println("\t\t\tWidth="+width, "\tHeight="+height); //key variables
   println("Display Monitor:", "\twidth="+displayWidth, "& height="+displayHeight);
   //
-  void declaration() {
-  String instruct="turn the damn phone";
+  String instruct="Bru, turn your phun";
   if ( appWidth < appHeight ) { //Declare Landscape Mode
     println(instruct);
   } else {
@@ -14,7 +14,7 @@ void display() {
       print("Display Geoemtry is Good to Go.");
     } else {
       println("STOP, is broken");
-    } 
-  }// end declaration
- }
+    }
+  }
+  }//End display
 //End Display Orientation Subprogram
