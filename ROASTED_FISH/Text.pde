@@ -1,9 +1,13 @@
 String spaceBar = "Press the Space Bar to Continue";
 PFont font;
-color resetDefaultInk=#000000,purple=#190BA0;
-//
+color resetDefaultInk=#000000, purple=#FF00FF;
+/* Night Mode Comment
+ Purple not for Night Mode, full BLUE
+ resetDefaultInk is Night Mode friendly
+ */
 void textSetup() {
-  //One FONT only here
+  //Minimum Expectation is SINGLE FONT
+  //
   //Fonts from OS (Operating System)
   // String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList); //For listing all possible fonts to choose from, then createFont
@@ -16,8 +20,8 @@ void spaceBarText() {
   fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 50; //Change the number until it fits
-  textFont(font, 50); 
+  int size = 20; //Change the number until it fits
+  textFont(font, size); 
   text( spaceBar, startX, startY, startWidth, startHeight );
   fill(resetDefaultInk);
 }//End spaceBarText

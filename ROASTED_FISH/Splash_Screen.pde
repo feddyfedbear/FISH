@@ -1,6 +1,6 @@
 float startX, startY, startWidth, startHeight;
-
-void splashScreen(){
+//
+void splashScreen() {
   /*Note: any visually-based code running in SetUp() controlled by MouseClick
    - background image
    */
@@ -11,9 +11,7 @@ void splashScreen(){
    - Splash Screen Details
    */
    background(255); //testing only
-   
-   spaceBarText();
-   textSetup(); 
+   textSetup();
 }//End splashScreen
 //
 //End Splash Screen Subprogram

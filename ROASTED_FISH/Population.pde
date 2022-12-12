@@ -5,6 +5,10 @@ startY = centerY - startHeight*1/2;
 startWidth = appWidth*1/2;
 startHeight = appHeight*1/10;
 //
+backgroundX = appWidth * 0;
+backgroundY = appHeight * 0;
+backgroundWidth = appWidth;
+backgroundHeight = appHeight;
 }// End Population
 //
 //End Population
