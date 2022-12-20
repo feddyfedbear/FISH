@@ -3,7 +3,7 @@ void display() {
   println("\t\t\tWidth="+width, "\tHeight="+height); //key variables
   println("Display Monitor:", "\twidth="+displayWidth, "& height="+displayHeight);
   //
-  String instruct="Bru, turn your phun";
+  String instruct="turn ur phun";
   if ( appWidth < appHeight ) { //Declare Landscape Mode
     println(instruct);
   } else {
