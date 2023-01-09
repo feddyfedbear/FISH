@@ -1,7 +1,7 @@
 PImage backgroundImage, quitButtonImage;
 //
-void imageSetup() {//Image Population
-  backgroundImage=loadImage("../Images/How-To-Cook-Whole-Fish-In-The-Oven-Baked-Roastted-Mahi-Mahi-Recipe-2.jpg");
+void imageSetup() {//Image Population 
+  backgroundImage=loadImage("../Image/How-To-Cook-Whole-Fish-In-The-Oven-Baked-Roastted-Mahi-Mahi-Recipe-2.jpg");
   //quitButtonImage is loaded here if different
 }//End imageSetup
 //

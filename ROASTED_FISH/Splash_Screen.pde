@@ -11,7 +11,7 @@ void splashScreen() {
    - Splash Screen Details
    */
    background(255); //testing only
-   textSetup();
+  spaceBarText();
 }//End splashScreen
 //
 //End Splash Screen Subprogram
