@@ -13,13 +13,13 @@ AudioPlayer song1; //creates "Play List" variable holding extensions WAV, AIFF, 
 void setup () {
   //size(500, 600); //Remind you of Display Geometry
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
-  song1 = minim.loadFile("") //able to pass absolute path, file name & extension, and URL
-  song2 = minim.loadFile("");
-  song3 = minim.loadFile("");
-  song4 = minim.loadFile("");
-  song5 = minim.loadFile("");
-  song6 = minim.loadFile("");
-  song7 = minim.loadFile("");
+  song1 = minim.loadFile("Me for You.mp3") //able to pass absolute path, file name & extension, and URL
+  song2 = minim.loadFile("Duck Toy Squeak Dog Toy Sound Effect (download).mp3");
+  song3 = minim.loadFile("And I'm Like Boo!, And They're Like ÆÆÆÆÆÆ.mp3");
+  song4 = minim.loadFile("Kid turns blue FULL VIDEO.mp3");
+  song5 = minim.loadFile("Metal pipe falling sound effect but it’s more violent.mp3");
+  song6 = minim.loadFile("Microwave MsM.mp3");
+  song7 = minim.loadFile("the sound of him eating a sandwich heavy [TF2].mp3");
 }//End setup
 //
 void draw() {
@@ -62,4 +62,4 @@ void keyPressed() {
 void mouseClicked() {
 }//End mousePressed
 //
-//end
+}//end void musicAndsound
