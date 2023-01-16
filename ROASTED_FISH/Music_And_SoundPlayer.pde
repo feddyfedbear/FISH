@@ -7,8 +7,8 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
-Minim minim; //creates object to access all functions
-AudioPlayer song1; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
+ Minim minim; //creates object to access all functions
+song1; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
 //
 void setup () {
   //size(500, 600); //Remind you of Display Geometry
