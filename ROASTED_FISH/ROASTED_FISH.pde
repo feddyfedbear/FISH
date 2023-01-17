@@ -12,7 +12,7 @@ color resetDefaultInk=#FFFFFF, white=#FFFFFF, purple=#FF00FF;
 //
 import ddf.minim.*;
 Minim minim;
-AudioPlayer RoastedFish; //
+AudioPlayer player; //
 void setup() {
   size(600, 400);
   //fullScreen(); //displayWidth, displayHeight
@@ -24,7 +24,7 @@ void setup() {
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
   population(); //Values based on DISPLAY
   minim = new Minim(this);
-  RoastedFish = minim.loadFile("../Microwave MsM.mp3");
+  player = minim.loadFile("MeForYou.mp3");
   textSetup();
   imageSetup();
 }//End setup
@@ -39,8 +39,8 @@ void draw() {
 //
 void keyPressed() {
   //Splash Screen SPACE Bar
-  //if (key=='F'|| key == 'f') RoastedFish.play();
-  if (key=='L'|| key == 'l') RoastedFish.loop();
+  if (key=='F'|| key == 'f') player.play();
+  if (key=='L'|| key == 'l') player.loop();
   if ( OS_On==true && key==' ' ) {
     splashScreenStart = true;
     backgroundImage();
