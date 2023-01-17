@@ -10,6 +10,9 @@ color resetDefaultInk=#FFFFFF, white=#FFFFFF, purple=#FF00FF;
  resetDefaultInk is Night Mode friendly
  */
 //
+import ddf.minim.*;
+Minim minim;
+AudioPlayer RoastedFish; //
 void setup() {
   size(600, 400);
   //fullScreen(); //displayWidth, displayHeight
@@ -20,6 +23,8 @@ void setup() {
   //smaller & larger dimension from Display Algorithm
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
   population(); //Values based on DISPLAY
+  minim = new Minim(this);
+  RoastedFish = minim.loadFile("../Microwave MsM.mp3");
   textSetup();
   imageSetup();
 }//End setup
@@ -34,6 +39,8 @@ void draw() {
 //
 void keyPressed() {
   //Splash Screen SPACE Bar
+  //if (key=='F'|| key == 'f') RoastedFish.play();
+  if (key=='L'|| key == 'l') RoastedFish.loop();
   if ( OS_On==true && key==' ' ) {
     splashScreenStart = true;
     backgroundImage();
@@ -56,7 +63,6 @@ void keyPressed() {
     }
   }//Home Screen Only
   //
-  
 }//End keyPressed
 //
 void mousePressed() {
